@@ -1,0 +1,9 @@
+<h1>{{ title }}</h1>
+<p class="p-class">{{ message }}</p>
+<p class="p-class1">{{ message1 }}</p>
+<p class="p-class">{{ Name1 }}</p>
+<app-navbar
+  [navPostData]="navbarData"
+  (MessageEvent)="recivedmessage($event)"
+  (MessageEvent1)="newMessage($event)"
+></app-navbar>
